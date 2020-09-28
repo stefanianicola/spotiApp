@@ -1,1 +1,10 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div *ngIf="error" class="alert alert-danger">
+    <h3>Error</h3>
+    <p>
+        {{ mensaje }}
+    </p>
+</div>
+
 <app-tarjetas [items]="newRealeses" ></app-tarjetas>

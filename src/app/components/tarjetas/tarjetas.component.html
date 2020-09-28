@@ -1,5 +1,5 @@
-<div class="card-columns">
-    <div class="card" *ngFor="let item of items">
+<div class="card-columns animated fadeIn">
+    <div (click)="verArtista( item )" class="card puntero" *ngFor="let item of items">
       <img [src]="item.images | noimg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ item.name }}</h5>
